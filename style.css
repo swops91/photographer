@@ -88,3 +88,41 @@ main img {
     font-weight: 200;
     margin-top: 0.8em;
 }
+.last {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.lastimg {
+    position: relative;
+    overflow: hidden;
+}
+.lasttext {
+    width: 76%;
+    position: absolute;
+    top: 15%;
+    left: 12%;
+    background-color: rgba(240, 240, 240, 0.7);
+    padding: 1em 3em;
+    color: black;
+    text-align: left;
+    font-size: 13px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.lasttext h3, .lasttext p, sup {
+    background-color: rgba(240, 240, 240, 0);
+    margin-bottom: 0.5em;
+}
+.lastimg:hover .lasttext, .last2_2:hover .lasttext {
+    opacity: 1;
+}
+img:hover, .lasttext:hover {
+    cursor: pointer;
+}
+.img3 {
+    width: 98.5%;
+}
+.img2 {
+    width: 96.5%;
+}
